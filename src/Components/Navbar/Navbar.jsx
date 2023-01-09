@@ -22,7 +22,7 @@ const Links = [
   { title: "Home", href: "intro" },
   { title: "About Me", href: "services" },
   { title: "Skills", href: "works" },
-  { title: "Projects", href: "projects" },
+  { title: "Projects", href: "portfolio" },
   { title: "Contact", href: "contact" },
   { title: "Resume", href: "resumes" },
 ];

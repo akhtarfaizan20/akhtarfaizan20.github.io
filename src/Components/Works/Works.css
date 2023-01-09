@@ -1,6 +1,6 @@
 .main_div{
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     /* padding: 4rem 4rem 4rem 4rem; */
     margin: auto;
     margin-top: 3rem;
@@ -16,6 +16,8 @@
       /* margin-bottom: 6rem; */
     
       /* scroll */
+      
+    overflow-x: hidden;
       margin-top: 4rem;
       
     }
