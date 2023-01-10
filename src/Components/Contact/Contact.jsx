@@ -70,7 +70,7 @@ const Contact = () => {
 
             <div className="con_img">
               <a
-                href="https://www.linkedin.com/in/debobrota-haldar-3340651aa/"
+                href="https://www.linkedin.com/in/faizan-akhtar-884b32198/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="linkdin"
@@ -79,7 +79,7 @@ const Contact = () => {
                 <p>LinkedIn</p>
               </a>
               <a
-                href="https://github.com/iamdebobrota"
+                href="https://github.com/akhtarfaizan20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="git_con"
@@ -88,7 +88,7 @@ const Contact = () => {
                 <p>GitHub</p>
               </a>
               <a
-                href="https://github.com/iamdebobrota"
+                href="mailto:akhtarfaizan20@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="git_con gmail"
