@@ -2,6 +2,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 // import Experience from "./Components/Experience/Experience";
 import Footer from "./Components/Footer/Footer";
+import GithubStats from "./Components/Github/GithubStats";
 import Intro from "./Components/Intro/Intro";
 import Navbar from "./Components/Navbar/Navbar";
 import Portfolio from "./Components/Protfolio/Portfolio";
@@ -15,6 +16,7 @@ function App() {
       <Works />
       {/* <Experience /> */}
       <Portfolio />
+      <GithubStats />
       <Contact />
       <Footer />
     </div>

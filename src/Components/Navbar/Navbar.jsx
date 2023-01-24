@@ -18,13 +18,13 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
+import { Link as Myroute } from "react-router-dom";
 const Links = [
   { title: "Home", href: "intro" },
   { title: "About Me", href: "services" },
   { title: "Skills", href: "works" },
   { title: "Projects", href: "portfolio" },
   { title: "Contact", href: "contact" },
-  { title: "Resume", href: "resumes" },
 ];
 
 const NavLink = ({ children }) => (
@@ -82,6 +82,30 @@ export default function Navbar() {
               {Links.map((link) => (
                 <NavLink key={link.href}>{link}</NavLink>
               ))}
+              <a
+                href={
+                  "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
+                }
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <Text
+                  fontSize="xl"
+                  as="b"
+                  color={"white"}
+                  _hover={{
+                    textDecoration: "none",
+                    bg: useColorModeValue("gray.200", "gray.700"),
+                    color: "#7c3aed",
+                  }}
+                  px={2}
+                  py={2}
+                  rounded={"md"}
+                  cursor="pointer"
+                >
+                  Resume
+                </Text>
+              </a>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -112,8 +136,32 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink key={link.title}>{link}</NavLink>
               ))}
+              <a
+                href={
+                  "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
+                }
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                <Text
+                  fontSize="xl"
+                  as="b"
+                  color={"white"}
+                  _hover={{
+                    textDecoration: "none",
+                    bg: "gray.200",
+                    color: "#7c3aed",
+                  }}
+                  px={2}
+                  py={2}
+                  rounded={"md"}
+                  cursor="pointer"
+                >
+                  Resume
+                </Text>
+              </a>
             </Stack>
           </Box>
         ) : null}

@@ -18,7 +18,7 @@ const Works = () => {
   }, []);
 
   return (
-    <div className="main_div" id="works" data-aos="zoom-out">
+    <div className="main_div" id="works">
       <span style={{ color: darkMode ? "white" : "" }} className="heading">
         My <span className="skills">Technical </span> Skills
       </span>

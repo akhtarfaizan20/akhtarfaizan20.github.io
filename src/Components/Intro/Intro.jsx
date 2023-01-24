@@ -6,12 +6,14 @@ import LinkedIn from "../../img/linkedin.png";
 import { themeContext } from "../../Context";
 import { Typewriter } from "react-simple-typewriter";
 import SmoothList from "react-smooth-list";
-
+import { useNavigate } from "react-router-dom";
+import resume from "../../img/Resume/Faizan_Akhtar_Resume.pdf";
 const Intro = () => {
   // Transition
   // const transition = { duration: 2, type: "spring" };
 
   // context
+  const navigate = useNavigate();
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -45,19 +47,24 @@ const Intro = () => {
             </h2>
           </div>
 
-          <a
-            href={
-              "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
-            }
-            download
-            className="resum anim"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            className="resume shadow-lg shadow-cyan-500/50"
+            onClick={() => {
+              navigate(
+                "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
+              );
+            }}
           >
-            <button className="resume shadow-lg shadow-cyan-500/50">
+            <a
+              href={resume}
+              download
+              className="resum anim"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
-            </button>
-          </a>
+            </a>
+          </button>
 
           <div className="i-icons">
             <a
