@@ -4,12 +4,6 @@ import {
   Avatar,
   HStack,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -18,7 +12,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import { Link as Myroute } from "react-router-dom";
+
 const Links = [
   { title: "Home", href: "intro" },
   { title: "About Me", href: "services" },
@@ -109,26 +103,10 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Menu>
-              <MenuButton
-                as={Button}
-                rounded={"full"}
-                variant={"link"}
-                cursor={"pointer"}
-                minW={0}
-              >
-                <Avatar
-                  size={"lg"}
-                  src={"https://avatars.githubusercontent.com/u/101265651?v=4"}
-                />
-              </MenuButton>
-              <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList>
-            </Menu>
+            <Avatar
+              size={"lg"}
+              src={"https://avatars.githubusercontent.com/u/101265651?v=4"}
+            />
           </Flex>
         </Flex>
 
