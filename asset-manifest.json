@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5c993b7.css",
-    "main.js": "/static/js/main.e442a440.js",
+    "main.css": "/static/css/main.e0af8802.css",
+    "main.js": "/static/js/main.436fe0b7.js",
     "static/js/787.e22a4446.chunk.js": "/static/js/787.e22a4446.chunk.js",
+    "static/media/bindass.png": "/static/media/bindass.3ae68b6e48f4a98cb4fd.png",
     "static/media/blushbeauty.png": "/static/media/blushbeauty.1472e7ba4fc8d1f83539.png",
     "static/media/geekbuying.png": "/static/media/geekbuying.f6844fa8ab0937b9d99c.png",
     "static/media/desibazaar.png": "/static/media/desibazaar.f52fd3f77a72add8958f.png",
-    "static/media/Faizan_Akhtar_Resume.pdf": "/static/media/Faizan_Akhtar_Resume.fe09d00d93aaf76c3ceb.pdf",
     "static/media/chakra.png": "/static/media/chakra.15320604467d004df871.png",
     "static/media/typescript.png": "/static/media/typescript.17936c69824e11a996c4.png",
     "static/media/database.png": "/static/media/database.24991eee32623f453b1c.png",
@@ -28,12 +28,12 @@
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/materialui.svg": "/static/media/materialui.87264df237ee700ba78bb58ff701a6d3.svg",
     "static/media/npm.svg": "/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.f5c993b7.css.map": "/static/css/main.f5c993b7.css.map",
-    "main.e442a440.js.map": "/static/js/main.e442a440.js.map",
+    "main.e0af8802.css.map": "/static/css/main.e0af8802.css.map",
+    "main.436fe0b7.js.map": "/static/js/main.436fe0b7.js.map",
     "787.e22a4446.chunk.js.map": "/static/js/787.e22a4446.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5c993b7.css",
-    "static/js/main.e442a440.js"
+    "static/css/main.e0af8802.css",
+    "static/js/main.436fe0b7.js"
   ]
 }
