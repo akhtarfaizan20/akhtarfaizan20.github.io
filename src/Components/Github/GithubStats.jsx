@@ -13,6 +13,7 @@ const GithubStats = () => {
         <Image
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=akhtarfaizan20&layout=compact&hide_border=true&theme=radical"
           alt="Most used languages"
+          data-aos="fade-up"
         />
       </Center>
 
@@ -27,10 +28,12 @@ const GithubStats = () => {
         <Image
           src="https://github-readme-stats.vercel.app/api?username=akhtarfaizan20&show_icons=true&locale=en&layout=compact&hide_border=true&theme=radical"
           alt="Github stats"
+          data-aos="fade-right"
         />
         <Image
           src="https://github-readme-streak-stats.herokuapp.com/?user=akhtarfaizan20&layout=compact&hide_border=true&theme=radical"
           alt="Current Streaks"
+          data-aos="fade-left"
         />
       </Flex>
 
@@ -42,6 +45,7 @@ const GithubStats = () => {
         p={"15px"}
         w={"fit-content"}
         borderRadius={"lg"}
+        data-aos="flip-up"
       >
         <GitHubCalendar
           username="akhtarfaizan20"

@@ -1,27 +1,12 @@
-import React, { useContext } from "react";
-import "./Intro.css";
+import React from "react";
 import me from "../../img/intro/me.jpg";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
-import { themeContext } from "../../Context";
 import { Typewriter } from "react-simple-typewriter";
 import SmoothList from "react-smooth-list";
-import resume from "../../img/Resume/Faizan_Akhtar_Resume.pdf";
-import {
-  Avatar,
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Link,
-  Text,
-} from "@chakra-ui/react";
+import { Avatar, Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { DownloadIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
 const Intro = () => {
-  // const darkMode = theme.state.darkMode;
-  const navigate = useNavigate();
-
   return (
     <SmoothList transitionDuration={2500} animated={true}>
       <Flex
@@ -70,9 +55,10 @@ const Intro = () => {
           }}
         >
           {" "}
-          <Link
+          <a
             href="https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
             download={"Faizan_Akhtar_Resume"}
+            style={{ textDecoration: "none" }}
           >
             <Button
               rightIcon={<DownloadIcon />}
@@ -88,7 +74,7 @@ const Intro = () => {
             >
               Resume
             </Button>
-          </Link>
+          </a>
         </Box>
 
         <Text
