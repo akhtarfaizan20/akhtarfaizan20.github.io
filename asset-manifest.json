@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.422790b1.css",
-    "main.js": "/static/js/main.5d4b87e2.js",
+    "main.css": "/static/css/main.7a8d549a.css",
+    "main.js": "/static/js/main.fca89595.js",
     "static/js/787.e22a4446.chunk.js": "/static/js/787.e22a4446.chunk.js",
     "static/media/bindass.png": "/static/media/bindass.3ae68b6e48f4a98cb4fd.png",
     "static/media/blushbeauty.png": "/static/media/blushbeauty.1472e7ba4fc8d1f83539.png",
@@ -29,12 +29,12 @@
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/materialui.svg": "/static/media/materialui.87264df237ee700ba78bb58ff701a6d3.svg",
     "static/media/npm.svg": "/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.422790b1.css.map": "/static/css/main.422790b1.css.map",
-    "main.5d4b87e2.js.map": "/static/js/main.5d4b87e2.js.map",
+    "main.7a8d549a.css.map": "/static/css/main.7a8d549a.css.map",
+    "main.fca89595.js.map": "/static/js/main.fca89595.js.map",
     "787.e22a4446.chunk.js.map": "/static/js/787.e22a4446.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.422790b1.css",
-    "static/js/main.5d4b87e2.js"
+    "static/css/main.7a8d549a.css",
+    "static/js/main.fca89595.js"
   ]
 }
