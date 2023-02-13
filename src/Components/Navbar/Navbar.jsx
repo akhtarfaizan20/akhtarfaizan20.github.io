@@ -8,6 +8,7 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
+import dp from "../../img/navbarsvg/dp.svg";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
@@ -76,37 +77,40 @@ export default function Navbar() {
               {Links.map((link) => (
                 <NavLink key={link.href}>{link}</NavLink>
               ))}
-              <a
-                href={
-                  "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
-                }
-                target={"_blank"}
-                rel={"noreferrer"}
+              <Box
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
+                  );
+                }}
               >
-                <Text
-                  fontSize="xl"
-                  as="b"
-                  color={"white"}
-                  _hover={{
-                    textDecoration: "none",
-                    bg: useColorModeValue("gray.200", "gray.700"),
-                    color: "#7c3aed",
-                  }}
-                  px={2}
-                  py={2}
-                  rounded={"md"}
-                  cursor="pointer"
+                <a
+                  href={
+                    "https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
+                  }
                 >
-                  Resume
-                </Text>
-              </a>
+                  <Text
+                    fontSize="xl"
+                    as="b"
+                    color={"white"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: useColorModeValue("gray.200", "gray.700"),
+                      color: "#7c3aed",
+                    }}
+                    px={2}
+                    py={2}
+                    rounded={"md"}
+                    cursor="pointer"
+                  >
+                    Resume
+                  </Text>
+                </a>
+              </Box>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Avatar
-              size={"lg"}
-              src={"https://avatars.githubusercontent.com/u/101265651?v=4"}
-            />
+            <Avatar size={"lg"} src={dp} />
           </Flex>
         </Flex>
 
@@ -116,30 +120,36 @@ export default function Navbar() {
               {Links.map((link) => (
                 <NavLink key={link.title}>{link}</NavLink>
               ))}
-              <a
-                href={
-                  "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
-                }
-                target={"_blank"}
-                rel={"noreferrer"}
+              <Box
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh/view?usp=share_link"
+                  );
+                }}
               >
-                <Text
-                  fontSize="xl"
-                  as="b"
-                  color={"white"}
-                  _hover={{
-                    textDecoration: "none",
-                    bg: "gray.200",
-                    color: "#7c3aed",
-                  }}
-                  px={2}
-                  py={2}
-                  rounded={"md"}
-                  cursor="pointer"
+                <a
+                  href={
+                    "https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
+                  }
                 >
-                  Resume
-                </Text>
-              </a>
+                  <Text
+                    fontSize="xl"
+                    as="b"
+                    color={"white"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: "gray.200",
+                      color: "#7c3aed",
+                    }}
+                    px={2}
+                    py={2}
+                    rounded={"md"}
+                    cursor="pointer"
+                  >
+                    Resume
+                  </Text>
+                </a>
+              </Box>
             </Stack>
           </Box>
         ) : null}

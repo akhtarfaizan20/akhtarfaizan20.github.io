@@ -1,6 +1,5 @@
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-// import Experience from "./Components/Experience/Experience";
 import Footer from "./Components/Footer/Footer";
 import GithubStats from "./Components/Github/GithubStats";
 import Intro from "./Components/Intro/Intro";
@@ -14,7 +13,6 @@ function App() {
       <Intro />
       <About />
       <Works />
-      {/* <Experience /> */}
       <Portfolio />
       <GithubStats />
       <Contact />

@@ -1,9 +1,9 @@
 
 .contact_main{
     text-align: center;
-    padding-top:4rem;
+    padding-top:2rem;
     margin: auto;
-    margin-top: 8rem;  
+    margin-top: 2rem;  
     overflow: hidden;
 }
 .contact_flex{
@@ -116,7 +116,7 @@ form
    background-color: #eeeeee00;
 }
 .c-right .user:focus{
-    background-color: #9b2b2b9d;
+    background-color: #bea5e5;
 }
 
 textarea{

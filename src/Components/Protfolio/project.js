@@ -6,8 +6,8 @@ import bindass from "../../img/projects/bindass.png";
 export const project = [
   {
     img: bindass,
-    title: "Desi Bazaar",
-    desc: "Desi Bazaar is an scalable fasion E-commerce platform inspired from Myntra.com where the user can come and explore the wide range of products available for men and women, and add the products in the cart and place their order.",
+    title: "Bindass.com",
+    desc: "Bindass.com is an scalable fasion E-commerce platform inspired from Bewakoof.com where the user can come and explore the wide range of products available for men and women, and add the products in the cart and place their order.",
     tech: "React, ChakraUI, HTML, CSS, JAVASCRIPT",
     git: "https://github.com/akhtarfaizan20/Desi-Bazaar",
     deploy: "https://desibazaar.vercel.app/",

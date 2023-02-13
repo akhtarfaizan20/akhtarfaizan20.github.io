@@ -5,12 +5,12 @@ import contact from "../../img/contact.svg";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsGithub } from "react-icons/bs";
-import { useForm, ValidationError } from "@formspree/react";
 import { CgMail } from "react-icons/cg";
 import { BsLinkedin } from "react-icons/bs";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useToast } from "@chakra-ui/react";
 
 const Contact = () => {
   const theme = useContext(themeContext);
@@ -19,15 +19,6 @@ const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-
-  const [state, handleSubmit] = useForm("xwkyadvj");
-  if (state.succeeded) {
-    return (
-      <p data-aos="flip-right" data-aos-duration="4000">
-        Thanks for joining!
-      </p>
-    );
-  }
 
   return (
     <div
@@ -116,10 +107,17 @@ export default Contact;
 // import { useForm, ValidationError } from '@formspree/react';
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm("xwkyadvj");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  const toast = useToast();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast({
+      title: "Your details has successfully sent.",
+      description: "We will shortly get in touch with you.",
+      status: "success",
+      duration: 4000,
+      isClosable: true,
+    });
+  };
   return (
     <form onSubmit={handleSubmit} className="form">
       <input
@@ -137,20 +135,13 @@ export function ContactForm() {
         className="user w-full"
         placeholder="Email"
       />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
       <textarea
         id="message"
         name="message"
         className="user w-full"
         placeholder="Messages"
       />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button
-        type="submit"
-        disabled={state.submitting}
-        data-aos="zoom-in-up"
-        className="button_su bg-red-600"
-      >
+      <button type="submit" className="button_su bg-red-600">
         Submit
       </button>
     </form>
