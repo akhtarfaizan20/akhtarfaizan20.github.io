@@ -6,6 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 import SmoothList from "react-smooth-list";
 import { Avatar, Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { DownloadIcon } from "@chakra-ui/icons";
+import resume from "../../Resume/fw21_0922_Faizan_Akhtar_Resume.pdf";
 const Intro = () => {
   return (
     <SmoothList transitionDuration={2500} animated={true}>
@@ -56,8 +57,8 @@ const Intro = () => {
         >
           {" "}
           <a
-            href="https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
-            download={"Faizan_Akhtar_Resume"}
+            href={resume}
+            download={"fw21_0922_Faizan_Akhtar_Resume"}
             style={{ textDecoration: "none" }}
           >
             <Button

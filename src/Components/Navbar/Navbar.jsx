@@ -13,7 +13,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-
+import resume from "../../Resume/fw21_0922_Faizan_Akhtar_Resume.pdf";
 const Links = [
   { title: "Home", href: "intro" },
   { title: "About Me", href: "services" },
@@ -22,7 +22,7 @@ const Links = [
   { title: "Contact", href: "contact" },
 ];
 
-const NavLink = ({ children }) => (
+const NavLink = ({ children, onClose }) => (
   <Link to={children.href} spy={true} smooth={true}>
     <Text
       fontSize="xl"
@@ -37,6 +37,7 @@ const NavLink = ({ children }) => (
       py={2}
       rounded={"md"}
       cursor="pointer"
+      onClick={onClose}
     >
       {children.title}
     </Text>
@@ -84,11 +85,7 @@ export default function Navbar() {
                   );
                 }}
               >
-                <a
-                  href={
-                    "https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
-                  }
-                >
+                <a href={resume} download={"fw21_0922_Faizan_Akhtar_Resume"}>
                   <Text
                     fontSize="xl"
                     as="b"
@@ -118,7 +115,9 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link.title}>{link}</NavLink>
+                <NavLink key={link.title} onClose={onClose}>
+                  {link}
+                </NavLink>
               ))}
               <Box
                 onClick={() => {
@@ -127,11 +126,7 @@ export default function Navbar() {
                   );
                 }}
               >
-                <a
-                  href={
-                    "https://drive.google.com/uc?export=download&id=1HQnBOPvpcN1hlxDWOV94e0_q9F2UQDuh"
-                  }
-                >
+                <a href={resume} download={"fw21_0922_Faizan_Akhtar_Resume"}>
                   <Text
                     fontSize="xl"
                     as="b"
