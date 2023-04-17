@@ -13,7 +13,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Image } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import resume from "../../Resume/fw21_0922_Faizan_Akhtar_Resume.pdf";
+import resume from "../../Resume/Faizan_Akhtar_Resume.pdf";
 const Links = [
   { title: "Home", href: "intro" },
   { title: "About Me", href: "services" },
@@ -85,7 +85,7 @@ export default function Navbar() {
                   );
                 }}
               >
-                <a href={resume} download={"fw21_0922_Faizan_Akhtar_Resume"}>
+                <a href={resume} download={"Faizan_Akhtar_Resume"}>
                   <Text
                     fontSize="xl"
                     as="b"
